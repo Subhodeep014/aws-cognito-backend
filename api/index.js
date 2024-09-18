@@ -31,7 +31,8 @@ app.use((err,req,res,next)=>{
         message
     })
 })
-app.listen(3000,()=>{
+const PORT = process.env.PORT || 8080
+app.listen(PORT,()=>{
     console.log("Server running on port 3000")
 })
 
